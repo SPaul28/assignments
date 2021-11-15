@@ -1,0 +1,12 @@
+CREATE TABLE NACE_REV2 (
+  order_No NUMBER auto_increment  PRIMARY KEY,
+  order_level VARCHAR(20) NOT NULL,
+  code VARCHAR(250) NOT NULL,
+  parent VARCHAR(250) DEFAULT NULL,
+  parent_desc VARCHAR(250) DEFAULT NULL,
+  includes VARCHAR(1000) DEFAULT NULL,
+  also_includes VARCHAR(300) DEFAULT NULL,
+  excludes VARCHAR(250) DEFAULT NULL,
+  rulings VARCHAR(1000) DEFAULT NULL,
+  reference_Isic VARCHAR(250) DEFAULT NULL
+);
